@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Köping - Resturang och bar</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/resturant-and-bar.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hotel köping</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Hem</a>
+          </li>
+          <li>
+            <a href="resturant-and-bar.html">Resturang och bar</a>
+          </li>
+          <li>
+            <a href="about.html">
+              Om oss
+            </a>
+            <ul>
+              <li>
+                <a href="about.html#location"> Hitta </a>
+              </li>
+              <li>
+                <a href="about.html#time">Öppetider</a>
+              </li>
+              <li>
+                <a href="about.html#contact">Kontakter</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="booking">
+        <div class="inner">
+          <button class="show-button" onclick="change(event)">
+            <img src="/img/downArrow.png" alt="" />
+            <span>Show booking</span>
+          </button>
+          <form class="is-open" onsubmit="return false">
+            <div>
+              <label for="fname">First name:</label>
+              <input type="text" name="fname" />
+            </div>
+            <div>
+              <label for="inCheck">Checka in</label>
+              <input type="date" name="inCheck" />
+            </div>
+            <div>
+              <label for="outCheck">Checka ut</label>
+              <input type="date" name="outCheck" />
+            </div>
+
+            <div>
+              <label for="rooms">Rum</label>
+              <div class="counter">
+                <button class="subtraction" onclick="add('rooms', -1)">
+                  -
+                </button>
+                <input type="text" name="rooms" value="0" />
+                <button class="addition" onclick="add('rooms', 1)">
+                  +
+                </button>
+              </div>
+            </div>
+            <div>
+              <label for="adults">Vuxna</label>
+              <div class="counter">
+                <button class="subtraction" onclick="add('adults', -1)">
+                  -
+                </button>
+                <input type="text" name="adults" value="0" />
+                <button class="addition" onclick="add('adults', 1)">+</button>
+              </div>
+            </div>
+            <div>
+              <label for="children">Barn (2-12 år)</label>
+              <div class="counter">
+                <button class="subtraction" onclick="add('children', -1)">
+                  -
+                </button>
+                <input type="text" name="children" value="0" />
+                <button class="addition" onclick="add('children', 1)">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <button class="search">
+                Hitta tillgängliga rum
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <article>
+      <h2 class="name">Resturang Viltsvint!</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eveniet
+        voluptatem, culpa debitis facere quae nostrum, distinctio aspernatur
+        quas, eaque expedita veritatis blanditiis? Fugiat consequuntur quaerat
+        debitis explicabo ea nisi.
+      </p>
+      <table>
+          <caption>Våra öppetider</caption>
+        <tr>
+          <th>Dag</th>
+          <th>Tider</th>
+        </tr>
+        <tr>
+            <td>Måndag</td>
+            <td>8-21</td>
+        </tr>
+        <tr>
+          <td>Tisdag</td>
+          <td>1-21</td>
+        </tr>
+        <tr>
+          <td>Onsdag</td>
+          <td>8-21</td>
+        </tr>
+        <tr>
+          <td>Torsdag</td>
+          <td>8-21</td>
+        </tr>
+        <tr>
+          <td>Fredag</td>
+          <td>8-21</td>
+        </tr>
+        <tr>
+          <td>Lördag</td>
+          <td>18-23</td>
+        </tr>
+        <tr>
+          <td>Söndag</td>
+          <td>11-22</td>
+        </tr>
+      </table>
+      <div class="resturant-menu">
+        <ul class="groups">
+          <li>
+            <h3>Starters</h3>
+            <ul class="dishes">
+              <li>
+                <div class="text">
+                  <h4>Vitlöks bröd</h4>
+                  <p>
+                    Vitt bröd med vitlöks smör som har smält i ugnen tillsammans med en gnutta hemligheter(Icke ätbar)
+                  </p>
+                  <h5 class="price">10kr</h5 class="price">
+                </div>
+                <img src="img/food.jpg" alt="" />
+              </li>
+              <li>
+                <div class="text">
+                  <h4>Friterad ost</h4>
+                  <p>
+                  Någon tappade ost i fritösen så vi gjorde friterade ost klumpar, en delikates väl känd för sin konstiga form.  
+                  </p>
+                  <h5 class="price">10kr</h5 class="price">
+                </div>
+                <img src="img/food.jpg" alt="" />
+              </li>
+              <li>
+                <div class="text">
+                  <h4>Minihamburgare</h4>
+                  <p>
+                    Små gulliga hamburgare som är så små att dem knappt syns men dem är gulliga och har stark smak tillsammans med grädde.
+                  </p>
+                  <h5 class="price">10kr</h5 class="price">
+                </div>
+                <img src="img/food.jpg" alt="" />
+              </li>
+              <li>
+                <div class="text">
+                  <h4>Toastskagen</h4>
+                  <p>
+                    Smörgås med räkor och dill, väldigt gott och inte giftigt som vitlöksbröden.
+                  </p>
+                  <h5 class="price">10kr</h5 class="price">
+                </div>
+                <img src="img/food.jpg" alt="" />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Huvudrätter</h3>
+            <ul class="dishes">
+              <li>
+                <div class="text">
+                  <h4>Lasagn</h4>
+                  <p>
+                    En väl gräddad lasagn med rosa vanilj sås och en ljuvlig smak av hummus. Kött från gården utanför, pasta källarn.
+                  </p>
+                  <h5 class="price">10kr</h5 class="price">
+                </div>
+                <img src="img/food.jpg" alt="" />
+              </li>
+              <li>
+                <div class="text">
+                  <h4>Tomatsoppa</h4>
+                  <p>
+                    Hårt pressade tomater som jäst i ugnen tillsammans med en väl angagerad majo och gräslök.
+                  </p>
+                  <h5 class="price">10kr</h5 class="price">
+                </div>
+                <img src="img/food.jpg" alt="" />
+              </li>
+              <li>
+                <div class="text">
+                  <h4>Tortolini</h4>
+                  <p>
+                    Pasta fylda med skinka och gräddfil liggandes i en sås gjord på konserver och tapet.
+                  </p>
+                  <h5 class="price">10kr</h5 class="price">
+                </div>
+                <img src="img/food.jpg" alt="" />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Efterätter</h3>
+            <ul class="dishes">
+              <li>
+                <div class="text">
+                  <h4>Vanilj glass med choklad</h4>
+                  <p>
+                    Vår egna påhittade rätt som bara serveras här med choklad och gammal stelnad glass.
+                  </p>
+                  <h5 class="price">10kr</h5 class="price">
+                </div>
+                <img src="img/food.jpg" alt="" />
+              </li>
+              <li>
+                <div class="text">
+                  <h4>Småkaka</h4>
+                  <p>
+                    En liten delikatess, som serveras med en större bit av kladd och ett glas mjölk som man kan doppa i.
+                  </p>
+                  <h5 class="price">10kr</h5 class="price">
+                </div>
+                <img src="img/food.jpg" alt="" />
+              </li>
+              <li>
+                <div class="text">
+                  <h4>Den frusna heta chokladen</h4>
+                  <p>
+                    Världens dyraste efterätt, om man vill beställa denna måste man göra det minst två veckor innan besöket.
+                  </p>
+                  <h5 class="price">178 000 kr</h5 class="price">
+                </div>
+                <img src="img/food.jpg" alt="" />
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <footer>
+      <div class="menu">
+        <div class="inner">
+          <h1>Hotel köping</h1>
+          <nav>
+            <ul>
+              <li>
+                <h2>Hem</h2>
+                <ul>
+                  <li><a href="">Hem</a></li>
+                </ul>
+              </li>
+              <li>
+                <h2>Resturang och bar</h2>
+                <ul>
+                  <li><a href="">Resturang och bar</a></li>
+                </ul>
+              </li>
+              <li>
+                <h2>Om oss</h2>
+                <ul>
+                  <li>
+                    <a href="about.html#location"> Hitta </a>
+                  </li>
+                  <li>
+                    <a href="about.html#time">Öppetider</a>
+                  </li>
+                  <li>
+                    <a href="about.html#contact">Kontakter</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="policy-social">
+        <div class="inner">
+          <a href="">Integritetspolicy</a>
+          <ul class="icons">
+            <li>
+              <a href="https://instagram.com/">
+                <img src="img/Instagram.png" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/">
+                <img src="img/Facebook_logo_(square).png" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/">
+                <img src="img/Twitter-Logo.png" alt="Twitter" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright Hotel köping 2020.</p>
+      </div>
+    </footer>
+  </body>
+</html>

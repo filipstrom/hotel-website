@@ -1,0 +1,32 @@
+img.map:hover {
+  cursor: grab;
+}
+
+img.map {
+  width: 100%;
+}
+
+table {
+  width: 400px;
+  margin-top: 32px;
+  margin-left: 64px;
+}
+
+table caption {
+  text-align: left;
+  font-size: 1.2em;
+  font-family: "Jost";
+  font-weight: 700;
+}
+
+table tr th {
+  text-align: left;
+}
+
+table tr:nth-child(even) {
+  background: rgb(240, 240, 240);
+}
+
+article div.tables {
+  display: flex;
+}

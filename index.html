@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel köping - Start</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/home.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Hotel köping</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Hem</a>
+          </li>
+          <li>
+            <a href="resturant-and-bar.html">Resturang och bar</a>
+          </li>
+          <li>
+            <a href="about.html">
+              Om oss
+            </a>
+            <ul>
+              <li>
+                <a href="about.html#location"> Hitta </a>
+              </li>
+              <li>
+                <a href="about.html#time">Öppetider</a>
+              </li>
+              <li>
+                <a href="about.html#contact">Kontakter</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="booking">
+        <div class="inner">
+          <button class="show-button" onclick="change(event)">
+            <img src="/img/downArrow.png" alt="" />
+            <span>Show booking</span>
+          </button>
+          <form class="is-open" onsubmit="return false">
+            <div>
+              <label for="fname">First name:</label>
+              <input type="text" name="fname" />
+            </div>
+            <div>
+              <label for="inCheck">Checka in</label>
+              <input type="date" name="inCheck" />
+            </div>
+            <div>
+              <label for="outCheck">Checka ut</label>
+              <input type="date" name="outCheck" />
+            </div>
+
+            <div>
+              <label for="rooms">Rum</label>
+              <div class="counter">
+                <button class="subtraction" onclick="add('rooms', -1)">
+                  -
+                </button>
+                <input type="text" name="rooms" value="0" />
+                <button class="addition" onclick="add('rooms', 1)">
+                  +
+                </button>
+              </div>
+            </div>
+            <div>
+              <label for="adults">Vuxna</label>
+              <div class="counter">
+                <button class="subtraction" onclick="add('adults', -1)">
+                  -
+                </button>
+                <input type="text" name="adults" value="0" />
+                <button class="addition" onclick="add('adults', 1)">+</button>
+              </div>
+            </div>
+            <div>
+              <label for="children">Barn (2-12 år)</label>
+              <div class="counter">
+                <button class="subtraction" onclick="add('children', -1)">
+                  -
+                </button>
+                <input type="text" name="children" value="0" />
+                <button class="addition" onclick="add('children', 1)">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <button class="search">
+                Hitta tillgängliga rum
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <article>
+      <h2>Välkommen till Hotel köping!</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe,
+        quisquam similique repellat voluptatibus iste amet officiis! Dolorum
+        impedit eos eum, accusamus quae tempora libero quas deserunt possimus
+        fugit pariatur quis?
+      </p>
+      <p>
+        Sed id semper risus in hendrerit gravida rutrum. Nec nam aliquam sem et
+        tortor. A diam sollicitudin tempor id eu nisl nunc. Rhoncus mattis
+        rhoncus urna neque viverra justo nec. Id aliquet lectus proin nibh.
+        Felis donec et odio pellentesque diam. Condimentum mattis pellentesque
+        id nibh tortor. Praesent semper feugiat nibh sed pulvinar proin gravida
+        hendrerit lectus.
+      </p>
+      <br />
+      <div class="img-credit">
+        <img
+          class="Hoteel"
+          src="img/7084343579_45fbd6504a_o.jpg"
+          alt="Bild tagen av: Eivind Kvamm-Lichtenfeld"
+        />
+        <p>Bild tagen av: Eivind Kvamm-Lichtenfeld</p>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nobis
+        labore quibusdam molestias, error assumenda similique delectus quia
+        sequi suscipit! Voluptate adipisci officia in omnis quo. Aspernatur
+        corporis esse tenetur.
+      </p>
+    </article>
+    <footer>
+      <div class="menu">
+        <div class="inner">
+          <h1>Hotel köping</h1>
+          <nav>
+            <ul>
+              <li>
+                <h2>Hem</h2>
+                <ul>
+                  <li><a href="">Hem</a></li>
+                </ul>
+              </li>
+              <li>
+                <h2>Resturang och bar</h2>
+                <ul>
+                  <li><a href="">Resturang och bar</a></li>
+                </ul>
+              </li>
+              <li>
+                <h2>Om oss</h2>
+                <ul>
+                  <li>
+                    <a href="about.html#location"> Hitta </a>
+                  </li>
+                  <li>
+                    <a href="about.html#time">Öppetider</a>
+                  </li>
+                  <li>
+                    <a href="about.html#contact">Kontakter</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="policy-social">
+        <div class="inner">
+          <a href="">Integritetspolicy</a>
+          <ul class="icons">
+            <li>
+              <a href="https://instagram.com/">
+                <img src="img/Instagram.png" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/">
+                <img src="img/Facebook_logo_(square).png" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/">
+                <img src="img/Twitter-Logo.png" alt="Twitter" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright Hotel köping 2020.</p>
+      </div>
+    </footer>
+  </body>
+</html>
